@@ -1,0 +1,6 @@
+{
+  "name": "Gaji Nirmala Farma",
+  "description": "Aplikasi manajemen gaji bulanan dan slip rincian otomatis untuk seluruh staf Apotek Nirmala Farma.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
