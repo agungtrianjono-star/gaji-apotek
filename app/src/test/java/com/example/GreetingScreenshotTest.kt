@@ -25,6 +25,19 @@ class GreetingScreenshotTest {
 
     composeTestRule.onRoot().captureRoboImage(filePath = "src/test/screenshots/greeting.png")
   }
+
+  @Test
+  fun payroll_screen_screenshot() {
+    val application = androidx.test.core.app.ApplicationProvider.getApplicationContext<android.app.Application>()
+    val viewModel = com.example.ui.PayrollViewModel(application)
+    composeTestRule.setContent {
+      MyApplicationTheme {
+        PayrollScreen(viewModel = viewModel)
+      }
+    }
+
+    composeTestRule.onRoot().captureRoboImage(filePath = "src/test/screenshots/payroll_screen.png")
+  }
 }
 
 @androidx.compose.runtime.Composable
